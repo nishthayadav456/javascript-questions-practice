@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .popup{
+           display: none;
+            border:2px solid black;
+            background-color: cornflowerblue;
+            text-align: center;
+            height:100px;
+            width:300px;
+            position: fixed;
+            top:40%;
+            left:20%;
+
+        }
+        .show{
+            display: block;
+        }
+        .todocontainer{
+            display: flex;
+            width:90vh;
+            height:500px;
+            border: 2px solid black;
+            background-color: rgb(178, 111, 172);
+            flex-flow: row wrap;
+        }
+        .todocard{
+            border: 2px solid black;
+            width:30%;
+            height:150px;
+            text-align: center;
+            margin: 20px;
+            background-color: rgb(50, 206, 167);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <h1 id="heading" class="box">Javascript</h1>
+    <h1 class="box">Javascript2</h1>
+    <h1>Javascript3</h1>
+    <h1>Javascript3</h1> -->
+    <button onclick="show()">show popup</button>
+    <button onclick="createPopup()">createpopup</button>
+     <div id="createPopup"></div> 
+
+
+    <div id="todos" class="todocontainer">
+        <!-- <div >
+            <h1> Task 1 </h1> 
+            <p>description of Task</p>
+             
+        </div>
+        </div> -->
+    <!-- <div class="popup show" id="popup">
+        <h1>This is A popup</h1>
+        <button onclick="hide()">X</button>
+
+    </div> -->
+    
+    <script src="./index.js"></script>
+</body>
+</html>
